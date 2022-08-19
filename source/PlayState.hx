@@ -1979,7 +1979,7 @@ class PlayState extends MusicBeatState
 
 				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote);
 				swagNote.mustPress = gottaHitNote;
-				if(((Note.charactersWith3D.contains(PlayState.SONG.player2) && !gottaHitNote) || (Note.charactersWith3D.contains(PlayState.SONG.player1) && gottaHitNote)) || ((Note.charactersWith3D.contains(PlayState.SONG.player2) || Note.charactersWith3D.contains(PlayState.SONG.player1)) && ((swagNote.strumTime / 50) % 20 > 10)))
+				if(((Note.charactersWith3D.contains(PlayState.SONG.player2) && !gottaHitNote) || (Note.charactersWith3D.contains(PlayState.SONG.player1) && gottaHitNote)) || ((Note.charactersWith3D.contains(PlayState.SONG.player2) || Note.charactersWith3D.contains(PlayState.SONG.player1)) && ((swagNote.strumTime / 50) % 0 > 0)))
 					{
 					   swagNote.texture = 'NOTE_assets_FOIG';
 					} else {
