@@ -1979,11 +1979,11 @@ class PlayState extends MusicBeatState
 
 				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote);
 				swagNote.mustPress = gottaHitNote;
-				if(((Note.charactersWith3D.contains(PlayState.SONG.player2) && !gottaHitNote) || (Note.charactersWith3D.contains(PlayState.SONG.player1) && gottaHitNote)) || ((Note.charactersWith3D.contains(PlayState.SONG.player2) || Note.charactersWith3D.contains(PlayState.SONG.player1)) && ((swagNote.strumTime / 50) % 20 > 10)))
+				if(((Note.charactersWith3D.contains(PlayState.SONG.player2) && !gottaHitNote) || (Note.charactersWith3D.contains(PlayState.SONG.player1) && gottaHitNote)) || ((Note.charactersWith3D.contains(PlayState.SONG.player2) || Note.charactersWith3D.contains(PlayState.SONG.player1)) && ((swagNote.strumTime / 50) % 0 > 0)))
 					{
 					   swagNote.texture = 'NOTE_assets_FOIG';
 					} else {
-					   swagNote.texture = 'NOTE_assets';
+					   swagNote.texture = 'NOTE_assets_FOIG';
 					}      //credits to ghost expunged cycba
 				swagNote.sustainLength = songNotes[2];
 				swagNote.gfNote = (section.gfSection && (songNotes[1]<4));
@@ -2378,11 +2378,11 @@ class PlayState extends MusicBeatState
 			}
         if (((Note.charactersWith3D.contains(PlayState.SONG.player1)) ||  ((Note.charactersWith3D.contains(PlayState.SONG.player1))))) {
             for(i in 0...4) {
-                playerStrums.members[i].texture = 'NOTE_assets';
+                playerStrums.members[i].texture = 'NOTE_assets_FOIG';
             }
             for(i in 0...unspawnNotes.length-1) {
                 if(unspawnNotes[i].mustPress) {
-                    unspawnNotes[i].texture = 'NOTE_assets';
+                    unspawnNotes[i].texture = 'NOTE_assets_FOIG';
                     }
                 }                   
             }
