@@ -6,81 +6,6 @@
 				0,
 				0
 			],
-			"anim": "idle-loop",
-			"fps": 24,
-			"name": "Dad idle dance",
-			"indices": [
-				10,
-				11,
-				12,
-				12
-			]
-		},
-		{
-			"loop": true,
-			"offsets": [
-				-9,
-				10
-			],
-			"anim": "singLEFT-loop",
-			"fps": 24,
-			"name": "Dad Sing Note LEFT",
-			"indices": [
-				12,
-				13,
-				14,
-				15
-			]
-		},
-		{
-			"loop": true,
-			"offsets": [
-				0,
-				27
-			],
-			"anim": "singRIGHT-loop",
-			"fps": 24,
-			"name": "Dad Sing Note RIGHT",
-			"indices": [
-				15,
-				16,
-				17,
-				18
-			]
-		},
-		{
-			"loop": true,
-			"offsets": [
-				-6,
-				50
-			],
-			"anim": "singUP-loop",
-			"fps": 24,
-			"name": "Dad Sing Note UP",
-			"indices": [
-				56,
-				57,
-				58,
-				59
-			]
-		},
-		{
-			"offsets": [
-				140,
-				-100
-			],
-			"loop": false,
-			"fps": 24,
-			"anim": "hey",
-			"indices": [],
-			"name": "WhatYouKnowAboutRollingDownInTheDeep"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
 			"anim": "idle",
 			"fps": 24,
 			"name": "idle",
@@ -89,65 +14,65 @@
 		{
 			"loop": false,
 			"offsets": [
-				261,
-				-40
+				80,
+				-32
 			],
 			"anim": "singLEFT",
 			"fps": 24,
-			"name": "singLEFT",
+			"name": "left",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-140,
-				-73
-			],
-			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "singRIGHT",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-26,
-				51
-			],
-			"anim": "singUP",
-			"fps": 24,
-			"name": "singUP",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-42,
-				-69
+				0,
+				-40
 			],
 			"anim": "singDOWN",
 			"fps": 24,
-			"name": "singDOWN",
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				130,
+				20
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				-40
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
 			"indices": []
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/FOIG",
+	"image": "characters/foig-assets",
 	"position": [
 		0,
-		0
+		80
 	],
-	"healthicon": "face",
+	"healthicon": "foig",
 	"flip_x": false,
 	"healthbar_colors": [
-		177,
-		6,
-		6
+		161,
+		161,
+		161
 	],
 	"camera_position": [
-		0,
+		-190,
 		0
 	],
 	"sing_duration": 6.1,
-	"scale": 1.4
+	"scale": 1.6
 }
