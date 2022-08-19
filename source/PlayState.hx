@@ -1983,7 +1983,7 @@ class PlayState extends MusicBeatState
 					{
 					   swagNote.texture = 'NOTE_assets_FOIG';
 					} else {
-					   swagNote.texture = 'NOTE_assets_FOIG';
+					   swagNote.texture = 'NOTE_assets';
 					}      //credits to ghost expunged cycba
 				swagNote.sustainLength = songNotes[2];
 				swagNote.gfNote = (section.gfSection && (songNotes[1]<4));
@@ -2378,11 +2378,11 @@ class PlayState extends MusicBeatState
 			}
         if (((Note.charactersWith3D.contains(PlayState.SONG.player1)) ||  ((Note.charactersWith3D.contains(PlayState.SONG.player1))))) {
             for(i in 0...4) {
-                playerStrums.members[i].texture = 'NOTE_assets_FOIG';
+                playerStrums.members[i].texture = 'NOTE_assets';
             }
             for(i in 0...unspawnNotes.length-1) {
                 if(unspawnNotes[i].mustPress) {
-                    unspawnNotes[i].texture = 'NOTE_assets_FOIG';
+                    unspawnNotes[i].texture = 'NOTE_assets';
                     }
                 }                   
             }
