@@ -186,7 +186,7 @@ class PlayState extends MusicBeatState
 	public var botplaySine:Float = 0;
 	public var botplayTxt:FlxText;
 
-	var funnyFloatyBoys:Array<String> = ['Foig']; //me when i you are, made by Ghost Expunged Cycba
+	var funnyFloatyBoys:Array<String> = ['foig']; //me when i you are, made by Ghost Expunged Cycba
 	var funnySideFloatyBoys:Array<String> = ['yourCHARACTERname'];
 
 	var canSlide = true;
@@ -1149,19 +1149,17 @@ class PlayState extends MusicBeatState
 		switch(randomThingy)
 		{
 			case 0:
-				engineRandomizer = 'Gab ';
+				engineRandomizer = 'Foig';
 			case 1:
-				engineRandomizer = 'Ghost Expunged Cycba ';
+				engineRandomizer = 'Shred';
 			case 2:
-				engineRandomizer = 'Aadiyan1 ';
-			case 3:
-				engineRandomizer = 'Epic Gamer ';
+				engineRandomizer = 'Epic Gamer';
 		}
 
         var swagWatermark = new FlxText(4, scoreTxt.y + 15, 0,
 		SONG.song
 		+ " "
-		+ "|  " + engineRandomizer + " Engine 0.1.2 (PE 0.5.2h)", 16);
+		+ "|  " + engineRandomizer + " Engine 1.0.1 (GE 0.1.2)", 16);
 		//+ " ", 16);
 		swagWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		swagWatermark.scrollFactor.set();
@@ -2380,11 +2378,11 @@ class PlayState extends MusicBeatState
 			}
         if (((Note.charactersWith3D.contains(PlayState.SONG.player1)) ||  ((Note.charactersWith3D.contains(PlayState.SONG.player1))))) {
             for(i in 0...4) {
-                playerStrums.members[i].texture = 'NOTE_assets_FOIG';
+                playerStrums.members[i].texture = 'NOTE_assets';
             }
             for(i in 0...unspawnNotes.length-1) {
                 if(unspawnNotes[i].mustPress) {
-                    unspawnNotes[i].texture = 'NOTE_assets_FOIG';
+                    unspawnNotes[i].texture = 'NOTE_assets';
                     }
                 }                   
             }
@@ -4163,10 +4161,7 @@ class PlayState extends MusicBeatState
 				popUpScore(note);
 				if(combo > 9999) combo = 9999;
 			}
-			if (note.isSustainNote) //me when making cheating harder hahahahahah funyn fcuk yio
-				health += 0.004;
-			else
-				health += 0.023;
+			health += note.hitHealth * healthGain;
 
 			if(!note.noAnimation) {
 				var daAlt = '';
