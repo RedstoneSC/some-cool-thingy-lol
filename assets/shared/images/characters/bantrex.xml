@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="bantrex.png"><SubTexture name="bantrex down0000" x="3685" y="0" width="668" height="433" frameX="-168" frameY="-291" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex down0001" x="3685" y="0" width="668" height="433" frameX="-168" frameY="-291" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex down0002" x="2907" y="2742" width="653" height="456" frameX="-182" frameY="-276" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex down0003" x="2259" y="2742" width="648" height="532" frameX="-183" frameY="-248" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex down0004" x="1642" y="2742" width="617" height="625" frameX="-206" frameY="-227" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex idle0000" x="885" y="1000" width="533" height="883" frameX="-261" frameY="-73" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex idle0001" x="885" y="1000" width="533" height="883" frameX="-261" frameY="-73" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex idle0002" x="2030" y="883" width="528" height="872" frameX="-261" frameY="-88" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex idle0003" x="1418" y="1000" width="508" height="841" frameX="-261" frameY="-102" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex idle0004" x="2878" y="808" width="508" height="807" frameX="-261" frameY="-109" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex idle0005" x="0" y="2742" width="507" height="776" frameX="-263" frameY="-121" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex left0000" x="0" y="1896" width="862" height="846" frameX="0" frameY="-84" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex left0001" x="0" y="1896" width="862" height="846" frameX="0" frameY="-84" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex left0002" x="1666" y="1896" width="851" height="829" frameX="-3" frameY="-90" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex left0003" x="2878" y="0" width="807" height="808" frameX="-32" frameY="-96" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex left0004" x="2878" y="1615" width="767" height="780" frameX="-60" frameY="-120" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex right0000" x="1129" y="0" width="901" height="920" frameX="-59" frameY="-70" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex right0001" x="1129" y="0" width="901" height="920" frameX="-59" frameY="-70" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex right0002" x="0" y="1000" width="885" height="896" frameX="-74" frameY="-77" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex right0003" x="2030" y="0" width="848" height="883" frameX="-115" frameY="-88" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex right0004" x="862" y="1896" width="804" height="845" frameX="-156" frameY="-102" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex up0000" x="0" y="0" width="566" height="1000" frameX="-306" frameY="0" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex up0001" x="0" y="0" width="566" height="1000" frameX="-306" frameY="0" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex up0002" x="566" y="0" width="563" height="1000" frameX="-307" frameY="0" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex up0003" x="1075" y="2742" width="567" height="686" frameX="-307" frameY="0" frameWidth="1000" frameHeight="1000" />
+<SubTexture name="bantrex up0004" x="507" y="2742" width="568" height="726" frameX="-306" frameY="-11" frameWidth="1000" frameHeight="1000" />
+</TextureAtlas>
