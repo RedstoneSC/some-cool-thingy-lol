@@ -1,32 +1,41 @@
 {
-	"songs": [
-		[
-			"Overdose",
-			"dad",
-			[
-				146,
-				113,
-				253
-			]
-		]
-	],
-	"hiddenUntilUnlocked": false,
+	"storyName": "in purple void",
+	"difficulties": "",
 	"hideFreeplay": false,
 	"weekBackground": "foig",
-	"difficulties": "",
-	"weekCharacters": [
-		"",
-		"",
-		""
-	],
-	"storyName": "in purple void",
-	"weekName": "Foig",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
-	"hideStoryMode": false,
 	"weekBefore": "tutorial",
-	"startUnlocked": true
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Overdose",
+			"foig",
+			[
+				160,
+				0,
+				255
+			]
+		],
+		[
+			"Purpleesh",
+			"foig",
+			[
+				160,
+				0,
+				255
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Foig",
+	"hiddenUntilUnlocked": false
 }
