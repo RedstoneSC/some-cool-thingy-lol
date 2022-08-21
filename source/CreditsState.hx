@@ -81,10 +81,19 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+			['Da Foiger Crew Team'],
+			['ShredBoiHD',           		'shred',			'Mod director, Composer',  				'https://youtube.com/c/ShredBoiShredEngine',     'FFD35B'],
+			['RedstoneSC',					'gab',			'Main Programmer, Asset Creator',									'https://www.youtube.com/channel/UCnMfn3dNQfRNwQTA2mUrrMw',																'EB2B48'],
+			['Taxi Yoshi 64',           		'taxi',			'Secondary Programmer, Animator, Charter',  				'https://www.youtube.com/channel/UCm4DPXq6_Rnr6cf2Qom3WOQ',     'FF0000'],
+			['kevin_dude19',           		'icon',			'Secondary Animator',  				'https://www.youtube.com/channel/UC3pJBGDmjQFCknuTItQRKpw',     'DC143C'],
+			[''],
+			['Da Foiger Crew Contributors'],
+			['AverageDaveLover',					'average',			'Animated Logo Bump',									'',																'23D600'],
+			[''],
 			['Gab Engine Team'],
-			['GabDoesStuff',           		'gab',			'Creator of Gab Engine and secondary coder',  				'https://www.youtube.com/channel/UCnMfn3dNQfRNwQTA2mUrrMw',     'EB2B48'],
-			['Ghost Expunged Cycba',					'icon',			'Main coder for Gab Engine',									'',																'AA0000'],
-			['Aadiyan1',           		'aad',			'Third coder and Shaders code',  				'https://www.youtube.com/user/Aadiyan1',     '03C200'],
+			['RedstoneSC',           		'gab',			'Gab Engine Director,  Main programmer',  				'https://www.youtube.com/channel/UCnMfn3dNQfRNwQTA2mUrrMw',     'EB2B48'],
+			['AverageDaveLover',					'average',			'Secondary programmer',									'',																'23D600'],
+			['Aadiyan1',           		'aad',			'Third programmer, shaders code',  				'https://www.youtube.com/user/Aadiyan1',     '03C200'],
 			[''],
 			['Special Credits'],
 			['Theoyeah',					'Theoyeah',			'Creator of Theoyeah Engine - Icon permission',									'',																'009BF4'], // Fuck you, im a minor, so i can't have a freaking youtube channel
