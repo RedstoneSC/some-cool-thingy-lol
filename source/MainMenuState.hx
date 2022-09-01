@@ -140,8 +140,6 @@ class MainMenuState extends MusicBeatState
 			menuItem.updateHitbox();
 		}
 
-		firstStart = false;
-
 		FlxG.camera.follow(camFollowPos, null, 1);
 
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 84, 0, "Thanks for playing!", 12);
