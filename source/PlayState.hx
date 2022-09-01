@@ -161,6 +161,7 @@ class PlayState extends MusicBeatState
 	public var combo:Int = 0;
 
 	private var healthBarBG:AttachedSprite;
+	public var healthBarOverlay:FlxSprite;
 	public var healthBar:FlxBar;
 	var songPercent:Float = 0;
 
@@ -1135,6 +1136,18 @@ class PlayState extends MusicBeatState
 		healthBar.alpha = ClientPrefs.healthBarAlpha;
 		add(healthBar);
 		healthBarBG.sprTracker = healthBar;
+
+		healthBarOverlay = new FlxSprite().loadGraphic(Paths.image('healthBarOverlay'));
+		healthBarOverlay.y = FlxG.height * 0.89;
+		healthBarOverlay.screenCenter(X);
+		healthBarOverlay.scrollFactor.set();
+		healthBarOverlay.visible = !ClientPrefs.hideHud;
+		healthBarOverlay.color = FlxColor.BLACK;
+		healthBarOverlay.blend = MULTIPLY;
+		healthBarOverlay.x = healthBarBG.x-1.9;
+		healthBarOverlay.antialiasing = ClientPrefs.globalAntialiasing;
+		add(healthBarOverlay);
+		if(ClientPrefs.downScroll) healthBarOverlay.y = 0.11 * FlxG.height;
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
 		iconP1.y = healthBar.y - 75;
