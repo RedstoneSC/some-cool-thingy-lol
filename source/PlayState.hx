@@ -1147,7 +1147,6 @@ class PlayState extends MusicBeatState
 		healthBarOverlay.x = healthBarBG.x-1.9;
 		healthBarOverlay.antialiasing = ClientPrefs.globalAntialiasing;
 		add(healthBarOverlay);
-		if(ClientPrefs.downScroll) healthBarOverlay.y = 0.11 * FlxG.height;
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
 		iconP1.y = healthBar.y - 75;
