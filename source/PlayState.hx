@@ -1118,14 +1118,6 @@ class PlayState extends MusicBeatState
 		FlxG.fixedTimestep = false;
 		moveCameraSection(0);
 
-		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
-			'health', 0, 2);
-		healthBar.scrollFactor.set();
-		// healthBar
-		healthBar.visible = !ClientPrefs.hideHud;
-		healthBar.alpha = ClientPrefs.healthBarAlpha;
-		add(healthBar);
-		healthBarBG.sprTracker = healthBar;
 
 		healthBarBG = new AttachedSprite('OLD_healthBar');
 		healthBarBG.y = FlxG.height * 0.89;
@@ -1137,14 +1129,14 @@ class PlayState extends MusicBeatState
 		add(healthBarBG);
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 
-		//healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
-	 	//	'health', 0, 2);
-		//healthBar.scrollFactor.set();
-		         //healthBar
-		//healthBar.visible = !ClientPrefs.hideHud;
-		//healthBar.alpha = ClientPrefs.healthBarAlpha;
-		//add(healthBar);
-		//healthBarBG.sprTracker = healthBar;
+		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
+	 		'health', 0, 2);
+		healthBar.scrollFactor.set();
+		    //healthBar
+		healthBar.visible = !ClientPrefs.hideHud;
+		healthBar.alpha = ClientPrefs.healthBarAlpha;
+		add(healthBar);
+		healthBarBG.sprTracker = healthBar;
 
 		healthBarOverlay = new FlxSprite().loadGraphic(Paths.image('healthBarOverlay'));
 		healthBarOverlay.y = FlxG.height * 0.89;
