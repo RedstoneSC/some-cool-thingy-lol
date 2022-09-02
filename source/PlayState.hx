@@ -1,4 +1,5 @@
 // heya, this code has been made by gabdoesstuff and cycba lol
+// hello its me, emmadev, i help on the round healthbar
 package;
 
 import flixel.graphics.FlxGraphic;
@@ -160,6 +161,7 @@ class PlayState extends MusicBeatState
 	public var health:Float = 1;
 	public var combo:Int = 0;
 
+        // me when uhhh when uhh me uhhh when
 	private var healthBarBG:AttachedSprite;
 	public var healthBarOverlay:FlxSprite;
 	public var healthBar:FlxBar;
@@ -1014,7 +1016,7 @@ class PlayState extends MusicBeatState
 
 		timeBarBG.y = 10;
 
-		add(timeBarBG);
+
 
 		if(ClientPrefs.downScroll)
 			timeBarBG.y = FlxG.height - 45;
@@ -1027,7 +1029,8 @@ class PlayState extends MusicBeatState
 	    timeBar.createFilledBar(FlxColor.GRAY, FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]));
 	    timeBar.pixelPerfectPosition = true;
 		timeBar.visible = showTime;
-	    add(timeBar);
+		add(timeBarBG);
+	        add(timeBar);
 		add(timeTxt);
 
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
@@ -1126,7 +1129,7 @@ class PlayState extends MusicBeatState
 		healthBarBG.visible = !ClientPrefs.hideHud;
 		healthBarBG.xAdd = -4;
 		healthBarBG.yAdd = -4;
-		add(healthBarBG);
+		
 		if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
@@ -1135,7 +1138,11 @@ class PlayState extends MusicBeatState
 		    //healthBar
 		healthBar.visible = !ClientPrefs.hideHud;
 		healthBar.alpha = ClientPrefs.healthBarAlpha;
+                
 		add(healthBar);
+                add(healthBarOverlay);
+                add(healthBarBG);
+
 		healthBarBG.sprTracker = healthBar;
 
 		healthBarOverlay = new FlxSprite().loadGraphic(Paths.image('healthBarOverlay'));
@@ -1147,7 +1154,7 @@ class PlayState extends MusicBeatState
 		healthBarOverlay.blend = MULTIPLY;
 		healthBarOverlay.x = healthBarBG.x-1.9;
 		healthBarOverlay.antialiasing = ClientPrefs.globalAntialiasing;
-		add(healthBarOverlay);
+		
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
 		iconP1.y = healthBar.y - 75;
