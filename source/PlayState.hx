@@ -1029,8 +1029,8 @@ class PlayState extends MusicBeatState
 	    timeBar.createFilledBar(FlxColor.GRAY, FlxColor.fromRGB(dad.healthColorArray[0], dad.healthColorArray[1], dad.healthColorArray[2]));
 	    timeBar.pixelPerfectPosition = true;
 		timeBar.visible = showTime;
-		add(timeBarBG);
 	        add(timeBar);
+		add(timeBarBG);
 		add(timeTxt);
 
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
@@ -1122,7 +1122,7 @@ class PlayState extends MusicBeatState
 		moveCameraSection(0);
 
 
-		healthBarBG = new AttachedSprite('OLD_healthBar');
+		healthBarBG = new AttachedSprite('healthBar');
 		healthBarBG.y = FlxG.height * 0.89;
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
@@ -1140,8 +1140,8 @@ class PlayState extends MusicBeatState
 		healthBar.alpha = ClientPrefs.healthBarAlpha;
                 
 		add(healthBar);
-                add(healthBarOverlay);
                 add(healthBarBG);
+                add(healthBarOverlay);
 
 		healthBarBG.sprTracker = healthBar;
 
@@ -1150,11 +1150,9 @@ class PlayState extends MusicBeatState
 		healthBarOverlay.screenCenter(X);
 		healthBarOverlay.scrollFactor.set();
 		healthBarOverlay.visible = !ClientPrefs.hideHud;
-		healthBarOverlay.color = FlxColor.BLACK;
-		healthBarOverlay.blend = MULTIPLY;
 		healthBarOverlay.x = healthBarBG.x-1.9;
 		healthBarOverlay.antialiasing = ClientPrefs.globalAntialiasing;
-		
+	
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
 		iconP1.y = healthBar.y - 75;
