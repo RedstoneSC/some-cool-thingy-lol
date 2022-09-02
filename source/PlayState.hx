@@ -1122,7 +1122,7 @@ class PlayState extends MusicBeatState
 		moveCameraSection(0);
 
 
-		healthBarBG = new AttachedSprite('healthBar');
+		healthBarBG = new AttachedSprite('TheCOOLERhealthbar');
 		healthBarBG.y = FlxG.height * 0.89;
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
